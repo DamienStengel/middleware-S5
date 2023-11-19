@@ -1,0 +1,7 @@
+C:\Users\Damien\source\repos\RoutingServer\RoutingServer\obj\Debug\RoutingServer.csproj.AssemblyReference.cache
+C:\Users\Damien\source\repos\RoutingServer\RoutingServer\obj\Debug\RoutingServer.csproj.CoreCompileInputs.cache
+C:\Users\Damien\source\repos\RoutingServer\RoutingServer\bin\Debug\RoutingServer.dll.config
+C:\Users\Damien\source\repos\RoutingServer\RoutingServer\bin\Debug\RoutingServer.dll
+C:\Users\Damien\source\repos\RoutingServer\RoutingServer\bin\Debug\RoutingServer.pdb
+C:\Users\Damien\source\repos\RoutingServer\RoutingServer\obj\Debug\RoutingServer.dll
+C:\Users\Damien\source\repos\RoutingServer\RoutingServer\obj\Debug\RoutingServer.pdb
