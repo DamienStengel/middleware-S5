@@ -23,13 +23,25 @@ namespace RoutingServer
         static async Task<Position> getPositionForAddress(string address)
         {
             var url = $"https://nominatim.openstreetmap.org/search?format=jsonv2&q={Uri.EscapeDataString(address)}";
-            Console.WriteLine("Calling API");
-            using (var httpClient = new HttpClient())
-            {
-                var response = await httpClient.GetStringAsync(url);
-                Console.WriteLine(response);
+    Console.WriteLine("Calling API");
+
+    using (var httpClient = new HttpClient())
+    {
+        httpClient.DefaultRequestHeaders.UserAgent.ParseAdd("MyBikeProject/1.0");
+
+        try
+        {
+            var response = await httpClient.GetStringAsync(url);
+            Console.WriteLine(response);
+            
+        }
+        catch (HttpRequestException e)
+        {
+            Console.WriteLine($"Request failed: {e.Message}");
+
+        }
+                return new Position();
             }
-            return new Position();
         }
     }
 }
