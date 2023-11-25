@@ -18,9 +18,26 @@ namespace RoutingServer
             nearestContract = getNearestContract(originPos, null);
             JCDStation originStation = getNearestStation(nearestContract, originPos, true);
             JCDStation destinationStation = getNearestStation(nearestContract, destinationPos,false);
-            GeoCoordinate
+            if (isStationsUseful(originPos, destinationPos, originStation.position, destinationStation.position))
+            {
 
+            }
             return "OriginPos:" + originPos.latitude + " " + originPos.longitude;
+        }
+
+        private bool isStationsUseful(Position originPos, Position destinationPos, Position station1, Position station2)
+        {
+            GeoCoordinate origin = new GeoCoordinate(originPos.latitude, originPos.latitude);
+            GeoCoordinate destination = new GeoCoordinate(destinationPos.latitude, destinationPos.latitude);
+            GeoCoordinate station1Pos = new GeoCoordinate(station1.latitude, station1.longitude);
+            GeoCoordinate station2Pos = new GeoCoordinate(station2.latitude, station2.longitude);
+            double footDistance = origin.GetDistanceTo(destination);
+            double bikeDistance = origin.GetDistanceTo(station1Pos) + station1Pos.GetDistanceTo(station2Pos) + station2Pos.GetDistanceTo(destination);
+            if (footDistance <= bikeDistance)
+            {
+                return false;
+            }
+            return true;
         }
 
         private JCDStation getNearestStation(JCDContract nearestContract, Position originPos, bool isInOriginMode)
