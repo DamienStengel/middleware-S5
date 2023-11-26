@@ -15,13 +15,13 @@ namespace RoutingServer
             JCDContract nearestContract;
             Position originPos = getPositionForAddress(origin).Result;
             Position destinationPos = getPositionForAddress(destination).Result;
-            nearestContract = getNearestContract(originPos, null);
+            /*nearestContract = getNearestContract(originPos, null);
             JCDStation originStation = getNearestStation(nearestContract, originPos, true);
             JCDStation destinationStation = getNearestStation(nearestContract, destinationPos,false);
             if (isStationsUseful(originPos, destinationPos, originStation.position, destinationStation.position))
             {
 
-            }
+            }*/
             return "OriginPos:" + originPos.latitude + " " + originPos.longitude;
         }
 

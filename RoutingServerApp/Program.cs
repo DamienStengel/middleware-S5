@@ -13,27 +13,32 @@ namespace RoutingServer
     {
         static void Main(string[] args)
         {
+
             Uri httpUrl = new Uri("http://localhost:8090/RoutingServer/");
+            using (ServiceHost host = new ServiceHost(typeof(Service), httpUrl))
+            {
+                // Créer et configurer un BasicHttpBinding sans sécurité
+                BasicHttpBinding binding = new BasicHttpBinding();
+                binding.Security.Mode = BasicHttpSecurityMode.None;
 
-            //Create ServiceHost
-            ServiceHost host = new ServiceHost(typeof(Service), httpUrl);
+                // Ajouter le point de terminaison
+                host.AddServiceEndpoint(typeof(IService), binding, "");
 
+                // Activer la publication de métadonnées, si nécessaire
+                ServiceMetadataBehavior smb = new ServiceMetadataBehavior { HttpGetEnabled = true };
+                host.Description.Behaviors.Add(smb);
 
-            //Add a service endpoint
-            host.AddServiceEndpoint(typeof(IService), new WSHttpBinding(), "");
+                // Démarrer le service
+                host.Open();
 
-            //Enable metadata exchange
-            ServiceMetadataBehavior smb = new ServiceMetadataBehavior();
-            smb.HttpGetEnabled = true;
-            host.Description.Behaviors.Add(smb);
+                Console.WriteLine("Service is hosted at " + DateTime.Now.ToString());
+                Console.WriteLine("Routing Server is running... Press <Enter> key to stop");
+                Console.ReadLine();
 
-            //Start the Service
-            host.Open();
+                // Le service sera fermé lorsque l'utilisateur appuie sur Entrée
+                host.Close();
 
-            Console.WriteLine("Service is host at " + DateTime.Now.ToString());
-            Console.WriteLine("Routing Server is running... Press <Enter> key to stop");
-            Console.ReadLine();
-
+            }
         }
     }
 }

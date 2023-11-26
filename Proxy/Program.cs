@@ -12,7 +12,7 @@ namespace Proxy
     {
         static void Main(string[] args)
         {
-            Uri httpUrl = new Uri("http://localhost:8090/RoutingServer/");
+            /*Uri httpUrl = new Uri("http://localhost:8090/RoutingServer/");
 
             //Create ServiceHost
             ServiceHost host = new ServiceHost(typeof(Service), httpUrl);
@@ -31,7 +31,7 @@ namespace Proxy
 
             Console.WriteLine("Service is host at " + DateTime.Now.ToString());
             Console.WriteLine("Host is running... Press <Enter> key to stop");
-            Console.ReadLine();
+            Console.ReadLine();*/
 
         }
     }
