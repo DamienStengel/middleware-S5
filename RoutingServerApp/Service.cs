@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Device.Location;
 using RoutingServerApp.OpenRouteClasses;
+using System.Diagnostics;
 
 namespace RoutingServer
 {   public class Service : IService
@@ -14,7 +15,7 @@ namespace RoutingServer
         const string OpenRouteServiceApiKey = "5b3ce3597851110001cf6248fad8725cf09348fa913d6e0ded7dfaf5";
         const string MODE_WALKING = "foot-walking";
         const string MODE_BIKING = "foot-walking";
-        public List<Route> GetItinary(string origin, string destination)
+        public List<Feature> GetItinary(string origin, string destination)
         {
             try
             {
@@ -37,40 +38,42 @@ namespace RoutingServer
                 }
                 
             }*/
-            var itineraries = new List<Route>();
+            var itineraries = new List<Feature>();
             
                 itineraries.Add(getItineraryFor(originPos, destinationPos, MODE_WALKING).Result);
                 return itineraries;
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Error in GetItinary: {ex.Message}");
-                Console.WriteLine($"StackTrace: {ex.StackTrace}");
+                Trace.WriteLine($"Error in GetItinary: {ex.Message}");
+                Trace.WriteLine($"StackTrace: {ex.StackTrace}");
                 throw;
             }
         }
 
-        private async Task<Route> getItineraryFor(Position start, Position end, string travelMode)
+        private async Task<Feature> getItineraryFor(Position start, Position end, string travelMode)
         {
             try
             {
 
                 var client = new HttpClient();
-                var requestUrl = $"https://api.openrouteservice.org/v2/directions/{travelMode}/geojson?api_key={OpenRouteServiceApiKey}&start={start.longitude},{start.latitude}&end={end.longitude},{end.latitude}";
-                Console.WriteLine("URL"+requestUrl);
+                //var requestUrl = $"https://api.openrouteservice.org/v2/directions/{travelMode}/geojson?api_key={OpenRouteServiceApiKey}&start={start.longitude},{start.latitude}&end={end.longitude},{end.latitude}";
+                var requestUrl = $"https://api.openrouteservice.org/v2/directions/foot-walking?api_key=5b3ce3597851110001cf6248fad8725cf09348fa913d6e0ded7dfaf5&start=8.681495,49.41461&end=8.687872,49.420318";
+                Trace.WriteLine("URL"+requestUrl);
                 var response = await client.GetStringAsync(requestUrl);
+                Trace.WriteLine("Réponse:" + response);
                 var routeResponse = JsonSerializer.Deserialize<OpenRouteServiceResponse>(response);
-                if (routeResponse?.Routes == null || routeResponse.Routes.Count == 0)
+                if (routeResponse?.Features == null || routeResponse.Features.Count == 0)
                 {
                     throw new Exception("Route not found");
                 }
 
-                return routeResponse.Routes[0];
+                return routeResponse.Features[0];
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Error in getItineraryFor: {ex.Message}");
-                Console.WriteLine($"StackTrace: {ex.StackTrace}");
+                Trace.WriteLine($"Error in getItineraryFor: {ex.Message}");
+                Trace.WriteLine($"StackTrace: {ex.StackTrace}");
                 throw;
             }
             
@@ -128,8 +131,8 @@ namespace RoutingServer
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine($"Error in getPositionForAddress: {ex.Message}");
-                    Console.WriteLine($"StackTrace: {ex.StackTrace}");
+                    Trace.WriteLine($"Error in getPositionForAddress: {ex.Message}");
+                    Trace.WriteLine($"StackTrace: {ex.StackTrace}");
                     throw;
                 }
             }

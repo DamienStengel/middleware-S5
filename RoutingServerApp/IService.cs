@@ -8,6 +8,6 @@ namespace RoutingServer
     public interface IService
     {
         [OperationContract]
-        List<Route> GetItinary(string origin, string destination);
+        List<Feature> GetItinary(string origin, string destination);
     }
 }

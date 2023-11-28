@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace RoutingServerApp.OpenRouteClasses
 {
-    public class OpenRouteServiceResponse
+    public class Properties
     {
-        public List<Feature> Features { get; set; }
+        public Summary Summary { get; set; }
+        public List<Segment> Segments { get; set; }
     }
 }
