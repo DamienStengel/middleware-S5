@@ -1,4 +1,6 @@
-﻿using System.ServiceModel;
+﻿using RoutingServerApp.OpenRouteClasses;
+using System.Collections.Generic;
+using System.ServiceModel;
 
 namespace RoutingServer
 {
@@ -6,7 +8,6 @@ namespace RoutingServer
     public interface IService
     {
         [OperationContract]
-        string GetItinary(string origin, string destination);
-
+        List<Route> GetItinary(string origin, string destination);
     }
 }

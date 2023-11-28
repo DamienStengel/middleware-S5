@@ -6,23 +6,77 @@ using System.Net.Http;
 using System;
 using System.Collections.Generic;
 using System.Device.Location;
+using RoutingServerApp.OpenRouteClasses;
 
 namespace RoutingServer
 {   public class Service : IService
     {
-        public string GetItinary(string origin, string destination)
+        const string OpenRouteServiceApiKey = "5b3ce3597851110001cf6248fad8725cf09348fa913d6e0ded7dfaf5";
+        const string MODE_WALKING = "foot-walking";
+        const string MODE_BIKING = "foot-walking";
+        public List<Route> GetItinary(string origin, string destination)
         {
-            JCDContract nearestContract;
-            Position originPos = getPositionForAddress(origin).Result;
+            try
+            {
+                Position originPos = getPositionForAddress(origin).Result;
             Position destinationPos = getPositionForAddress(destination).Result;
-            /*nearestContract = getNearestContract(originPos, null);
-            JCDStation originStation = getNearestStation(nearestContract, originPos, true);
-            JCDStation destinationStation = getNearestStation(nearestContract, destinationPos,false);
+            /*JCDStation originStation = getNearestStation(originPos, true);
+            JCDStation destinationStation = getNearestStation(destinationPos,false);
+            var itineraries = new List<Route>();
             if (isStationsUseful(originPos, destinationPos, originStation.position, destinationStation.position))
             {
-
+                try
+                {
+                    itineraries.Add(getItineraryFor(originPos, originStation.position, MODE_WALKING).Result);
+                    itineraries.Add(getItineraryFor(originStation.position,destinationStation.position, MODE_BIKING).Result);
+                    itineraries.Add(getItineraryFor(destinationStation.position, destinationPos, MODE_WALKING).Result);
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
+                
             }*/
-            return "OriginPos:" + originPos.latitude + " " + originPos.longitude;
+            var itineraries = new List<Route>();
+            
+                itineraries.Add(getItineraryFor(originPos, destinationPos, MODE_WALKING).Result);
+                return itineraries;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error in GetItinary: {ex.Message}");
+                Console.WriteLine($"StackTrace: {ex.StackTrace}");
+                throw;
+            }
+        }
+
+        private async Task<Route> getItineraryFor(Position start, Position end, string travelMode)
+        {
+            try
+            {
+
+                var client = new HttpClient();
+                var requestUrl = $"https://api.openrouteservice.org/v2/directions/{travelMode}/geojson?api_key={OpenRouteServiceApiKey}&start={start.longitude},{start.latitude}&end={end.longitude},{end.latitude}";
+                Console.WriteLine("URL"+requestUrl);
+                var response = await client.GetStringAsync(requestUrl);
+                var routeResponse = JsonSerializer.Deserialize<OpenRouteServiceResponse>(response);
+                if (routeResponse?.Routes == null || routeResponse.Routes.Count == 0)
+                {
+                    throw new Exception("Route not found");
+                }
+
+                return routeResponse.Routes[0];
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error in getItineraryFor: {ex.Message}");
+                Console.WriteLine($"StackTrace: {ex.StackTrace}");
+                throw;
+            }
+            
+
+            
+           
         }
 
         private bool isStationsUseful(Position originPos, Position destinationPos, Position station1, Position station2)
@@ -40,15 +94,11 @@ namespace RoutingServer
             return true;
         }
 
-        private JCDStation getNearestStation(JCDContract nearestContract, Position originPos, bool isInOriginMode)
+        private JCDStation getNearestStation(Position originPos, bool isInOriginMode)
         {
             throw new NotImplementedException();
         }
 
-        private JCDContract getNearestContract(Position pos, JCDContract previousContract)
-        {
-            return null;
-        }
 
         static async Task<Position> getPositionForAddress(string address)
         {
@@ -74,15 +124,14 @@ namespace RoutingServer
                             };
                         }
                     }
+                    return new Position();
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine(ex.Message);
+                    Console.WriteLine($"Error in getPositionForAddress: {ex.Message}");
+                    Console.WriteLine($"StackTrace: {ex.StackTrace}");
+                    throw;
                 }
-
-                return new Position();
-
-
             }
         }
         static async Task<string> JCDecauxAPICall(string url, string query)

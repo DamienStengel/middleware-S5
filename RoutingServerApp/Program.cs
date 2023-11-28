@@ -20,6 +20,13 @@ namespace RoutingServer
                 // Créer et configurer un BasicHttpBinding sans sécurité
                 BasicHttpBinding binding = new BasicHttpBinding();
                 binding.Security.Mode = BasicHttpSecurityMode.None;
+                ServiceDebugBehavior debugBehavior = host.Description.Behaviors.Find<ServiceDebugBehavior>();
+                if (debugBehavior == null)
+                {
+                    debugBehavior = new ServiceDebugBehavior();
+                    host.Description.Behaviors.Add(debugBehavior);
+                }
+                debugBehavior.IncludeExceptionDetailInFaults = true;
 
                 // Ajouter le point de terminaison
                 host.AddServiceEndpoint(typeof(IService), binding, "");
