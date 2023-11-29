@@ -8,5 +8,8 @@ namespace Proxy
 {
     internal class Contract
     {
+        public string name { get; set; }
+        public DateTime lastRefresh { get; set; }
+        public List<JCDStation> stations { get; set; }
     }
 }

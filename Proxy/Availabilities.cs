@@ -8,5 +8,9 @@ namespace Proxy
 {
     internal class Availabilities
     {
+        public int bikes {  get; set; }
+        public int stands { get; set; }
+        public int mechanicalBikes { get; set; }
+        public int electricalBikes { get; set; }
     }
 }

@@ -13,48 +13,72 @@ namespace Proxy
 {
     public class Service : IService
     {
-        public JCDStation GetNearestStation(Position position, bool isCheckingBikeAvailability)
-        {
-
-            throw new NotImplementedException();
-        }
         private const string BaseUrl = "https://api.jcdecaux.com/vls/v3/";
         private const string ApiKey = "f43a772a0e8818f54fa0f0c2628d4e2a2375b0c7";
-
-        static async Task Main(string[] args)
+        private List<Contract> contracts;
+        //Delay between on stations in second
+        private const double PROXY_REFRESH_TIME = 120;
+        public async Task<JCDStation> GetNearestStation(Position position, bool isCheckingBikeAvailability)
         {
             using (HttpClient client = new HttpClient())
             {
                 client.BaseAddress = new Uri(BaseUrl);
-
-                // List all contracts
-                var contracts = await GetContracts(client);
-                foreach (var contract in contracts)
+                if(contracts == null)
                 {
-                    Console.WriteLine(contract.name);
+                    var JCDContracts = await GetContracts(client);
+                    foreach(var contract in JCDContracts)
+                    {
+                        var contractResult = new Contract();
+                        contractResult.name = contract.name;
+                        var JCDStations = await GetStationsForContract(client, contract.name);
+                        contractResult.stations = JCDStations;
+                        contractResult.lastRefresh = DateTime.Now;
+                        this.contracts.Add(contractResult);
+                    }
                 }
-
-                Console.WriteLine("Choose a contract:");
-                string chosenContract = Console.ReadLine();
-
-                // Retrieve stations for the chosen contract
-                var stations = await GetStationsForContract(client, chosenContract);
-                foreach (var station in stations)
+                var nearestContract = getNearestContract(position);
+                TimeSpan refreshTimeSpan = TimeSpan.FromSeconds(PROXY_REFRESH_TIME);
+                if (DateTime.Now - nearestContract.lastRefresh < refreshTimeSpan)
                 {
-                    Console.WriteLine(station.name);
-                    Console.WriteLine(station.number);
+                    nearestContract.stations = await GetStationsForContract(client,nearestContract.name);
+
                 }
+                var closestStation = FindClosestStation(position, nearestContract.stations, isCheckingBikeAvailability);
 
-                Console.WriteLine("Choose a station:");
-                int chosenStationNumber = int.Parse(Console.ReadLine());
-
-                var chosenStation = stations.Find(s => s.number == chosenStationNumber);
-                var closestStation = FindClosestStation(chosenStation, stations);
-
-                Console.WriteLine($"The closest station to {chosenStationNumber} is {closestStation.number}");
-                Console.ReadLine();
+                return closestStation;
             }
         }
+
+        private Contract getNearestContract(Position currentPosition)
+        {
+            Contract nearestContract = null;
+            double nearestDistance = double.MaxValue;
+            GeoCoordinate currentGeo = currentPosition.ToGeoCoordinate();
+
+            foreach (var contract in this.contracts)
+            {
+                foreach (var station in contract.stations)
+                {
+                    GeoCoordinate stationGeo = station.position.ToGeoCoordinate();
+                    double distance = currentGeo.GetDistanceTo(stationGeo);
+                    if (distance < nearestDistance)
+                    {
+                        nearestDistance = distance;
+                        nearestContract = contract;
+                    }
+                    else
+                    {
+                        if(distance-nearestDistance < 100000)
+                        {
+                            break;
+                        }
+                    }
+                }
+            }
+
+            return nearestContract;
+        }
+
 
         static async Task<List<JCDContract>> GetContracts(HttpClient client)
         {
@@ -68,24 +92,29 @@ namespace Proxy
             return JsonSerializer.Deserialize<List<JCDStation>>(response);
         }
 
-        static JCDStation FindClosestStation(JCDStation target, List<JCDStation> stations)
+        static JCDStation FindClosestStation(Position target, List<JCDStation> stations, Boolean isCheckingForAvailability)
         {
-            GeoCoordinate targetCoord = new GeoCoordinate(target.position.latitude, target.position.longitude);
+            GeoCoordinate targetCoord = target.ToGeoCoordinate();
             double closestDistance = double.MaxValue;
             JCDStation closestStation = null;
 
             foreach (var station in stations)
             {
-                if (station.number == target.number) continue;
-
-                GeoCoordinate stationCoord = new GeoCoordinate(station.position.latitude, station.position.longitude);
-                double distance = targetCoord.GetDistanceTo(stationCoord);
-
-                if (distance < closestDistance)
+                if (station.mainStands.availabilities.bikes > 0)
                 {
-                    closestDistance = distance;
-                    closestStation = station;
+                    GeoCoordinate stationCoord = station.position.ToGeoCoordinate();
+                    double distance = targetCoord.GetDistanceTo(stationCoord);
+
+                    if (distance < closestDistance)
+                    {
+                        closestDistance = distance;
+                        closestStation = station;
+                    }
                 }
+            }
+            if(closestStation == null)
+            {
+                throw new Exception("No bike available in nearby station");
             }
 
             return closestStation;

@@ -8,5 +8,7 @@ namespace Proxy
 {
     internal class MainStands
     {
+        public Availabilities availabilities { get; set; }
+
     }
 }

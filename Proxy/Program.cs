@@ -12,7 +12,7 @@ namespace Proxy
     {
         static void Main(string[] args)
         {
-            Uri httpUrl = new Uri("http://localhost:8091/RoutingServer/");
+            Uri httpUrl = new Uri("http://localhost:8090/Proxy/");
 
             //Create ServiceHost
             ServiceHost host = new ServiceHost(typeof(Service), httpUrl);
