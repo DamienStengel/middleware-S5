@@ -27,6 +27,9 @@ C:\Users\Damien\source\repos\RoutingServer\RoutingServerApp\obj\Debug\RoutingSer
 C:\Users\damys\source\repos\middleware-S5\RoutingServerApp\bin\Debug\RoutingServerApp.exe.config
 C:\Users\damys\source\repos\middleware-S5\RoutingServerApp\bin\Debug\RoutingServerApp.exe
 C:\Users\damys\source\repos\middleware-S5\RoutingServerApp\bin\Debug\RoutingServerApp.pdb
+C:\Users\damys\source\repos\middleware-S5\RoutingServerApp\bin\Debug\Apache.NMS.ActiveMQ.dll
+C:\Users\damys\source\repos\middleware-S5\RoutingServerApp\bin\Debug\Apache.NMS.dll
+C:\Users\damys\source\repos\middleware-S5\RoutingServerApp\bin\Debug\ICSharpCode.SharpZipLib.dll
 C:\Users\damys\source\repos\middleware-S5\RoutingServerApp\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\damys\source\repos\middleware-S5\RoutingServerApp\bin\Debug\System.Buffers.dll
 C:\Users\damys\source\repos\middleware-S5\RoutingServerApp\bin\Debug\System.Memory.dll
@@ -36,6 +39,8 @@ C:\Users\damys\source\repos\middleware-S5\RoutingServerApp\bin\Debug\System.Text
 C:\Users\damys\source\repos\middleware-S5\RoutingServerApp\bin\Debug\System.Text.Json.dll
 C:\Users\damys\source\repos\middleware-S5\RoutingServerApp\bin\Debug\System.Threading.Tasks.Extensions.dll
 C:\Users\damys\source\repos\middleware-S5\RoutingServerApp\bin\Debug\System.ValueTuple.dll
+C:\Users\damys\source\repos\middleware-S5\RoutingServerApp\bin\Debug\ICSharpCode.SharpZipLib.pdb
+C:\Users\damys\source\repos\middleware-S5\RoutingServerApp\bin\Debug\ICSharpCode.SharpZipLib.xml
 C:\Users\damys\source\repos\middleware-S5\RoutingServerApp\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
 C:\Users\damys\source\repos\middleware-S5\RoutingServerApp\bin\Debug\System.Buffers.xml
 C:\Users\damys\source\repos\middleware-S5\RoutingServerApp\bin\Debug\System.Memory.xml

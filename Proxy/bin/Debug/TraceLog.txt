@@ -1,0 +1,768 @@
+GetNearestStation - Début
+GetNearestStation - Chargement des contrats
+GetContracts - Début
+GetContracts - Contrats récupérés avec succès
+GetStationsForContract - Début pour le contrat : rouen
+GetStationsForContract - Stations récupérées pour le contrat rouen
+GetStationsForContract - Début pour le contrat : jcdecauxbike
+GetStationsForContract - Stations récupérées pour le contrat jcdecauxbike
+GetStationsForContract - Début pour le contrat : toulouse
+GetStationsForContract - Stations récupérées pour le contrat toulouse
+GetStationsForContract - Début pour le contrat : luxembourg
+GetStationsForContract - Stations récupérées pour le contrat luxembourg
+GetStationsForContract - Début pour le contrat : dublin
+GetStationsForContract - Stations récupérées pour le contrat dublin
+GetStationsForContract - Début pour le contrat : valence
+GetStationsForContract - Stations récupérées pour le contrat valence
+GetStationsForContract - Début pour le contrat : stockholm
+GetStationsForContract - Stations récupérées pour le contrat stockholm
+GetStationsForContract - Début pour le contrat : santander
+GetStationsForContract - Stations récupérées pour le contrat santander
+GetStationsForContract - Début pour le contrat : lund
+GetStationsForContract - Stations récupérées pour le contrat lund
+GetStationsForContract - Début pour le contrat : maribor
+GetStationsForContract - Stations récupérées pour le contrat maribor
+GetStationsForContract - Début pour le contrat : bruxelles
+GetStationsForContract - Stations récupérées pour le contrat bruxelles
+GetStationsForContract - Début pour le contrat : lyon
+GetStationsForContract - Stations récupérées pour le contrat lyon
+GetStationsForContract - Début pour le contrat : amiens
+GetStationsForContract - Stations récupérées pour le contrat amiens
+GetStationsForContract - Début pour le contrat : mulhouse
+GetStationsForContract - Stations récupérées pour le contrat mulhouse
+GetStationsForContract - Début pour le contrat : lillestrom
+GetStationsForContract - Stations récupérées pour le contrat lillestrom
+GetStationsForContract - Début pour le contrat : ljubljana
+GetStationsForContract - Stations récupérées pour le contrat ljubljana
+GetStationsForContract - Début pour le contrat : seville
+GetStationsForContract - Stations récupérées pour le contrat seville
+GetStationsForContract - Début pour le contrat : nancy
+GetStationsForContract - Stations récupérées pour le contrat nancy
+GetStationsForContract - Début pour le contrat : namur
+GetStationsForContract - Stations récupérées pour le contrat namur
+GetStationsForContract - Début pour le contrat : creteil
+GetStationsForContract - Stations récupérées pour le contrat creteil
+GetStationsForContract - Début pour le contrat : cergy-pontoise
+GetStationsForContract - Stations récupérées pour le contrat cergy-pontoise
+GetStationsForContract - Début pour le contrat : vilnius
+GetStationsForContract - Stations récupérées pour le contrat vilnius
+GetStationsForContract - Début pour le contrat : toyama
+GetStationsForContract - Stations récupérées pour le contrat toyama
+GetStationsForContract - Début pour le contrat : marseille
+GetStationsForContract - Stations récupérées pour le contrat marseille
+GetStationsForContract - Début pour le contrat : nantes
+GetStationsForContract - Stations récupérées pour le contrat nantes
+GetStationsForContract - Début pour le contrat : brisbane
+GetStationsForContract - Stations récupérées pour le contrat brisbane
+GetStationsForContract - Début pour le contrat : besancon
+GetStationsForContract - Stations récupérées pour le contrat besancon
+GetNearestContract - Début
+GetNearestContract - Contrat le plus proche trouvé : toulouse
+GetNearestStation - Contrat le plus proche : toulouse
+FindClosestStation - Début43,5105542 1,3669722
+FindClosestStation - Station la plus proche trouvée : 00264 - LAFOURGUETTE
+GetNearestStation - Station la plus proche trouvée : 00264 - LAFOURGUETTE
+GetNearestStation - Début
+GetNearestStation - Chargement des contrats
+GetContracts - Début
+GetContracts - Contrats récupérés avec succès
+GetStationsForContract - Début pour le contrat : rouen
+GetStationsForContract - Stations récupérées pour le contrat rouen
+GetStationsForContract - Début pour le contrat : jcdecauxbike
+GetStationsForContract - Stations récupérées pour le contrat jcdecauxbike
+GetStationsForContract - Début pour le contrat : toulouse
+GetStationsForContract - Stations récupérées pour le contrat toulouse
+GetStationsForContract - Début pour le contrat : luxembourg
+GetStationsForContract - Stations récupérées pour le contrat luxembourg
+GetStationsForContract - Début pour le contrat : dublin
+GetStationsForContract - Stations récupérées pour le contrat dublin
+GetStationsForContract - Début pour le contrat : valence
+GetStationsForContract - Stations récupérées pour le contrat valence
+GetStationsForContract - Début pour le contrat : stockholm
+GetStationsForContract - Stations récupérées pour le contrat stockholm
+GetStationsForContract - Début pour le contrat : santander
+GetStationsForContract - Stations récupérées pour le contrat santander
+GetStationsForContract - Début pour le contrat : lund
+GetStationsForContract - Stations récupérées pour le contrat lund
+GetStationsForContract - Début pour le contrat : maribor
+GetStationsForContract - Stations récupérées pour le contrat maribor
+GetStationsForContract - Début pour le contrat : bruxelles
+GetStationsForContract - Stations récupérées pour le contrat bruxelles
+GetStationsForContract - Début pour le contrat : lyon
+GetStationsForContract - Stations récupérées pour le contrat lyon
+GetStationsForContract - Début pour le contrat : amiens
+GetStationsForContract - Stations récupérées pour le contrat amiens
+GetStationsForContract - Début pour le contrat : mulhouse
+GetStationsForContract - Stations récupérées pour le contrat mulhouse
+GetStationsForContract - Début pour le contrat : lillestrom
+GetStationsForContract - Stations récupérées pour le contrat lillestrom
+GetStationsForContract - Début pour le contrat : ljubljana
+GetStationsForContract - Stations récupérées pour le contrat ljubljana
+GetStationsForContract - Début pour le contrat : seville
+GetStationsForContract - Stations récupérées pour le contrat seville
+GetStationsForContract - Début pour le contrat : nancy
+GetStationsForContract - Stations récupérées pour le contrat nancy
+GetStationsForContract - Début pour le contrat : namur
+GetStationsForContract - Stations récupérées pour le contrat namur
+GetStationsForContract - Début pour le contrat : creteil
+GetStationsForContract - Stations récupérées pour le contrat creteil
+GetStationsForContract - Début pour le contrat : cergy-pontoise
+GetStationsForContract - Stations récupérées pour le contrat cergy-pontoise
+GetStationsForContract - Début pour le contrat : vilnius
+GetStationsForContract - Stations récupérées pour le contrat vilnius
+GetStationsForContract - Début pour le contrat : toyama
+GetStationsForContract - Stations récupérées pour le contrat toyama
+GetStationsForContract - Début pour le contrat : marseille
+GetStationsForContract - Stations récupérées pour le contrat marseille
+GetStationsForContract - Début pour le contrat : nantes
+GetStationsForContract - Stations récupérées pour le contrat nantes
+GetStationsForContract - Début pour le contrat : brisbane
+GetStationsForContract - Stations récupérées pour le contrat brisbane
+GetStationsForContract - Début pour le contrat : besancon
+GetStationsForContract - Stations récupérées pour le contrat besancon
+GetNearestContract - Début
+GetNearestContract - Contrat le plus proche trouvé : toulouse
+GetNearestStation - Contrat le plus proche : toulouse
+FindClosestStation - Début43,6534937 1,4628286
+FindClosestStation - Station la plus proche trouvée : 00172 - NETWILLER - LAFFORGUE
+GetNearestStation - Station la plus proche trouvée : 00172 - NETWILLER - LAFFORGUE
+GetNearestStation - Début
+GetNearestStation - Chargement des contrats
+GetContracts - Début
+GetContracts - Contrats récupérés avec succès
+GetStationsForContract - Début pour le contrat : rouen
+GetStationsForContract - Stations récupérées pour le contrat rouen
+GetStationsForContract - Début pour le contrat : jcdecauxbike
+GetStationsForContract - Stations récupérées pour le contrat jcdecauxbike
+GetStationsForContract - Début pour le contrat : toulouse
+GetStationsForContract - Stations récupérées pour le contrat toulouse
+GetStationsForContract - Début pour le contrat : luxembourg
+GetStationsForContract - Stations récupérées pour le contrat luxembourg
+GetStationsForContract - Début pour le contrat : dublin
+GetStationsForContract - Stations récupérées pour le contrat dublin
+GetStationsForContract - Début pour le contrat : valence
+GetStationsForContract - Stations récupérées pour le contrat valence
+GetStationsForContract - Début pour le contrat : stockholm
+GetStationsForContract - Stations récupérées pour le contrat stockholm
+GetStationsForContract - Début pour le contrat : santander
+GetStationsForContract - Stations récupérées pour le contrat santander
+GetStationsForContract - Début pour le contrat : lund
+GetStationsForContract - Stations récupérées pour le contrat lund
+GetStationsForContract - Début pour le contrat : maribor
+GetStationsForContract - Stations récupérées pour le contrat maribor
+GetStationsForContract - Début pour le contrat : bruxelles
+GetStationsForContract - Stations récupérées pour le contrat bruxelles
+GetStationsForContract - Début pour le contrat : lyon
+GetStationsForContract - Stations récupérées pour le contrat lyon
+GetStationsForContract - Début pour le contrat : amiens
+GetStationsForContract - Stations récupérées pour le contrat amiens
+GetStationsForContract - Début pour le contrat : mulhouse
+GetStationsForContract - Stations récupérées pour le contrat mulhouse
+GetStationsForContract - Début pour le contrat : lillestrom
+GetStationsForContract - Stations récupérées pour le contrat lillestrom
+GetStationsForContract - Début pour le contrat : ljubljana
+GetStationsForContract - Stations récupérées pour le contrat ljubljana
+GetStationsForContract - Début pour le contrat : seville
+GetStationsForContract - Stations récupérées pour le contrat seville
+GetStationsForContract - Début pour le contrat : nancy
+GetStationsForContract - Stations récupérées pour le contrat nancy
+GetStationsForContract - Début pour le contrat : namur
+GetStationsForContract - Stations récupérées pour le contrat namur
+GetStationsForContract - Début pour le contrat : creteil
+GetStationsForContract - Stations récupérées pour le contrat creteil
+GetStationsForContract - Début pour le contrat : cergy-pontoise
+GetStationsForContract - Stations récupérées pour le contrat cergy-pontoise
+GetStationsForContract - Début pour le contrat : vilnius
+GetStationsForContract - Stations récupérées pour le contrat vilnius
+GetStationsForContract - Début pour le contrat : toyama
+GetStationsForContract - Stations récupérées pour le contrat toyama
+GetStationsForContract - Début pour le contrat : marseille
+GetStationsForContract - Stations récupérées pour le contrat marseille
+GetStationsForContract - Début pour le contrat : nantes
+GetStationsForContract - Stations récupérées pour le contrat nantes
+GetStationsForContract - Début pour le contrat : brisbane
+GetStationsForContract - Stations récupérées pour le contrat brisbane
+GetStationsForContract - Début pour le contrat : besancon
+GetStationsForContract - Stations récupérées pour le contrat besancon
+GetNearestContract - Début
+GetNearestContract - Contrat le plus proche trouvé : toulouse
+GetNearestStation - Contrat le plus proche : toulouse
+FindClosestStation - Début43,5105542 1,3669722
+FindClosestStation - Station la plus proche trouvée : 00264 - LAFOURGUETTE
+GetNearestStation - Station la plus proche trouvée : 00264 - LAFOURGUETTE
+GetNearestStation - Début
+GetNearestStation - Chargement des contrats
+GetContracts - Début
+GetContracts - Contrats récupérés avec succès
+GetStationsForContract - Début pour le contrat : rouen
+GetStationsForContract - Stations récupérées pour le contrat rouen
+GetStationsForContract - Début pour le contrat : jcdecauxbike
+GetStationsForContract - Stations récupérées pour le contrat jcdecauxbike
+GetStationsForContract - Début pour le contrat : toulouse
+GetStationsForContract - Stations récupérées pour le contrat toulouse
+GetStationsForContract - Début pour le contrat : luxembourg
+GetStationsForContract - Stations récupérées pour le contrat luxembourg
+GetStationsForContract - Début pour le contrat : dublin
+GetStationsForContract - Stations récupérées pour le contrat dublin
+GetStationsForContract - Début pour le contrat : valence
+GetStationsForContract - Stations récupérées pour le contrat valence
+GetStationsForContract - Début pour le contrat : stockholm
+GetStationsForContract - Stations récupérées pour le contrat stockholm
+GetStationsForContract - Début pour le contrat : santander
+GetStationsForContract - Stations récupérées pour le contrat santander
+GetStationsForContract - Début pour le contrat : lund
+GetStationsForContract - Stations récupérées pour le contrat lund
+GetStationsForContract - Début pour le contrat : maribor
+GetStationsForContract - Stations récupérées pour le contrat maribor
+GetStationsForContract - Début pour le contrat : bruxelles
+GetStationsForContract - Stations récupérées pour le contrat bruxelles
+GetStationsForContract - Début pour le contrat : lyon
+GetStationsForContract - Stations récupérées pour le contrat lyon
+GetStationsForContract - Début pour le contrat : amiens
+GetStationsForContract - Stations récupérées pour le contrat amiens
+GetStationsForContract - Début pour le contrat : mulhouse
+GetStationsForContract - Stations récupérées pour le contrat mulhouse
+GetStationsForContract - Début pour le contrat : lillestrom
+GetStationsForContract - Stations récupérées pour le contrat lillestrom
+GetStationsForContract - Début pour le contrat : ljubljana
+GetStationsForContract - Stations récupérées pour le contrat ljubljana
+GetStationsForContract - Début pour le contrat : seville
+GetStationsForContract - Stations récupérées pour le contrat seville
+GetStationsForContract - Début pour le contrat : nancy
+GetStationsForContract - Stations récupérées pour le contrat nancy
+GetStationsForContract - Début pour le contrat : namur
+GetStationsForContract - Stations récupérées pour le contrat namur
+GetStationsForContract - Début pour le contrat : creteil
+GetStationsForContract - Stations récupérées pour le contrat creteil
+GetStationsForContract - Début pour le contrat : cergy-pontoise
+GetStationsForContract - Stations récupérées pour le contrat cergy-pontoise
+GetStationsForContract - Début pour le contrat : vilnius
+GetStationsForContract - Stations récupérées pour le contrat vilnius
+GetStationsForContract - Début pour le contrat : toyama
+GetStationsForContract - Stations récupérées pour le contrat toyama
+GetStationsForContract - Début pour le contrat : marseille
+GetStationsForContract - Stations récupérées pour le contrat marseille
+GetStationsForContract - Début pour le contrat : nantes
+GetStationsForContract - Stations récupérées pour le contrat nantes
+GetStationsForContract - Début pour le contrat : brisbane
+GetStationsForContract - Stations récupérées pour le contrat brisbane
+GetStationsForContract - Début pour le contrat : besancon
+GetStationsForContract - Stations récupérées pour le contrat besancon
+GetNearestContract - Début
+GetNearestContract - Contrat le plus proche trouvé : toulouse
+GetNearestStation - Contrat le plus proche : toulouse
+FindClosestStation - Début43,6534937 1,4628286
+FindClosestStation - Station la plus proche trouvée : 00172 - NETWILLER - LAFFORGUE
+GetNearestStation - Station la plus proche trouvée : 00172 - NETWILLER - LAFFORGUE
+GetNearestStation - Début
+GetNearestStation - Chargement des contrats
+GetContracts - Début
+GetContracts - Contrats récupérés avec succès
+GetStationsForContract - Début pour le contrat : rouen
+GetStationsForContract - Stations récupérées pour le contrat rouen
+GetStationsForContract - Début pour le contrat : jcdecauxbike
+GetStationsForContract - Stations récupérées pour le contrat jcdecauxbike
+GetStationsForContract - Début pour le contrat : toulouse
+GetStationsForContract - Stations récupérées pour le contrat toulouse
+GetStationsForContract - Début pour le contrat : luxembourg
+GetStationsForContract - Stations récupérées pour le contrat luxembourg
+GetStationsForContract - Début pour le contrat : dublin
+GetStationsForContract - Stations récupérées pour le contrat dublin
+GetStationsForContract - Début pour le contrat : valence
+GetStationsForContract - Stations récupérées pour le contrat valence
+GetStationsForContract - Début pour le contrat : stockholm
+GetStationsForContract - Stations récupérées pour le contrat stockholm
+GetStationsForContract - Début pour le contrat : santander
+GetStationsForContract - Stations récupérées pour le contrat santander
+GetStationsForContract - Début pour le contrat : lund
+GetStationsForContract - Stations récupérées pour le contrat lund
+GetStationsForContract - Début pour le contrat : maribor
+GetStationsForContract - Stations récupérées pour le contrat maribor
+GetStationsForContract - Début pour le contrat : bruxelles
+GetStationsForContract - Stations récupérées pour le contrat bruxelles
+GetStationsForContract - Début pour le contrat : lyon
+GetStationsForContract - Stations récupérées pour le contrat lyon
+GetStationsForContract - Début pour le contrat : amiens
+GetStationsForContract - Stations récupérées pour le contrat amiens
+GetStationsForContract - Début pour le contrat : mulhouse
+GetStationsForContract - Stations récupérées pour le contrat mulhouse
+GetStationsForContract - Début pour le contrat : lillestrom
+GetStationsForContract - Stations récupérées pour le contrat lillestrom
+GetStationsForContract - Début pour le contrat : ljubljana
+GetStationsForContract - Stations récupérées pour le contrat ljubljana
+GetStationsForContract - Début pour le contrat : seville
+GetStationsForContract - Stations récupérées pour le contrat seville
+GetStationsForContract - Début pour le contrat : nancy
+GetStationsForContract - Stations récupérées pour le contrat nancy
+GetStationsForContract - Début pour le contrat : namur
+GetStationsForContract - Stations récupérées pour le contrat namur
+GetStationsForContract - Début pour le contrat : creteil
+GetStationsForContract - Stations récupérées pour le contrat creteil
+GetStationsForContract - Début pour le contrat : cergy-pontoise
+GetStationsForContract - Stations récupérées pour le contrat cergy-pontoise
+GetStationsForContract - Début pour le contrat : vilnius
+GetStationsForContract - Stations récupérées pour le contrat vilnius
+GetStationsForContract - Début pour le contrat : toyama
+GetStationsForContract - Stations récupérées pour le contrat toyama
+GetStationsForContract - Début pour le contrat : marseille
+GetStationsForContract - Stations récupérées pour le contrat marseille
+GetStationsForContract - Début pour le contrat : nantes
+GetStationsForContract - Stations récupérées pour le contrat nantes
+GetStationsForContract - Début pour le contrat : brisbane
+GetStationsForContract - Stations récupérées pour le contrat brisbane
+GetStationsForContract - Début pour le contrat : besancon
+GetStationsForContract - Stations récupérées pour le contrat besancon
+GetNearestContract - Début
+GetNearestContract - Contrat le plus proche trouvé : toulouse
+GetNearestStation - Contrat le plus proche : toulouse
+FindClosestStation - Début43,5105542 1,3669722
+FindClosestStation - Station la plus proche trouvée : 00264 - LAFOURGUETTE
+GetNearestStation - Station la plus proche trouvée : 00264 - LAFOURGUETTE
+GetNearestStation - Début
+GetNearestStation - Chargement des contrats
+GetContracts - Début
+GetContracts - Contrats récupérés avec succès
+GetStationsForContract - Début pour le contrat : rouen
+GetStationsForContract - Stations récupérées pour le contrat rouen
+GetStationsForContract - Début pour le contrat : jcdecauxbike
+GetStationsForContract - Stations récupérées pour le contrat jcdecauxbike
+GetStationsForContract - Début pour le contrat : toulouse
+GetStationsForContract - Stations récupérées pour le contrat toulouse
+GetStationsForContract - Début pour le contrat : luxembourg
+GetStationsForContract - Stations récupérées pour le contrat luxembourg
+GetStationsForContract - Début pour le contrat : dublin
+GetStationsForContract - Stations récupérées pour le contrat dublin
+GetStationsForContract - Début pour le contrat : valence
+GetStationsForContract - Stations récupérées pour le contrat valence
+GetStationsForContract - Début pour le contrat : stockholm
+GetStationsForContract - Stations récupérées pour le contrat stockholm
+GetStationsForContract - Début pour le contrat : santander
+GetStationsForContract - Stations récupérées pour le contrat santander
+GetStationsForContract - Début pour le contrat : lund
+GetStationsForContract - Stations récupérées pour le contrat lund
+GetStationsForContract - Début pour le contrat : maribor
+GetStationsForContract - Stations récupérées pour le contrat maribor
+GetStationsForContract - Début pour le contrat : bruxelles
+GetStationsForContract - Stations récupérées pour le contrat bruxelles
+GetStationsForContract - Début pour le contrat : lyon
+GetStationsForContract - Stations récupérées pour le contrat lyon
+GetStationsForContract - Début pour le contrat : amiens
+GetStationsForContract - Stations récupérées pour le contrat amiens
+GetStationsForContract - Début pour le contrat : mulhouse
+GetStationsForContract - Stations récupérées pour le contrat mulhouse
+GetStationsForContract - Début pour le contrat : lillestrom
+GetStationsForContract - Stations récupérées pour le contrat lillestrom
+GetStationsForContract - Début pour le contrat : ljubljana
+GetStationsForContract - Stations récupérées pour le contrat ljubljana
+GetStationsForContract - Début pour le contrat : seville
+GetStationsForContract - Stations récupérées pour le contrat seville
+GetStationsForContract - Début pour le contrat : nancy
+GetStationsForContract - Stations récupérées pour le contrat nancy
+GetStationsForContract - Début pour le contrat : namur
+GetStationsForContract - Stations récupérées pour le contrat namur
+GetStationsForContract - Début pour le contrat : creteil
+GetStationsForContract - Stations récupérées pour le contrat creteil
+GetStationsForContract - Début pour le contrat : cergy-pontoise
+GetStationsForContract - Stations récupérées pour le contrat cergy-pontoise
+GetStationsForContract - Début pour le contrat : vilnius
+GetStationsForContract - Stations récupérées pour le contrat vilnius
+GetStationsForContract - Début pour le contrat : toyama
+GetStationsForContract - Stations récupérées pour le contrat toyama
+GetStationsForContract - Début pour le contrat : marseille
+GetStationsForContract - Stations récupérées pour le contrat marseille
+GetStationsForContract - Début pour le contrat : nantes
+GetStationsForContract - Stations récupérées pour le contrat nantes
+GetStationsForContract - Début pour le contrat : brisbane
+GetStationsForContract - Stations récupérées pour le contrat brisbane
+GetStationsForContract - Début pour le contrat : besancon
+GetStationsForContract - Stations récupérées pour le contrat besancon
+GetNearestContract - Début
+GetNearestContract - Contrat le plus proche trouvé : toulouse
+GetNearestStation - Contrat le plus proche : toulouse
+FindClosestStation - Début43,6534937 1,4628286
+FindClosestStation - Station la plus proche trouvée : 00172 - NETWILLER - LAFFORGUE
+GetNearestStation - Station la plus proche trouvée : 00172 - NETWILLER - LAFFORGUE
+GetNearestStation - Début
+GetNearestStation - Chargement des contrats
+GetContracts - Début
+GetContracts - Contrats récupérés avec succès
+GetStationsForContract - Début pour le contrat : rouen
+GetStationsForContract - Stations récupérées pour le contrat rouen
+GetStationsForContract - Début pour le contrat : jcdecauxbike
+GetStationsForContract - Stations récupérées pour le contrat jcdecauxbike
+GetStationsForContract - Début pour le contrat : toulouse
+GetStationsForContract - Stations récupérées pour le contrat toulouse
+GetStationsForContract - Début pour le contrat : luxembourg
+GetStationsForContract - Stations récupérées pour le contrat luxembourg
+GetStationsForContract - Début pour le contrat : dublin
+GetStationsForContract - Stations récupérées pour le contrat dublin
+GetStationsForContract - Début pour le contrat : valence
+GetStationsForContract - Stations récupérées pour le contrat valence
+GetStationsForContract - Début pour le contrat : stockholm
+GetStationsForContract - Stations récupérées pour le contrat stockholm
+GetStationsForContract - Début pour le contrat : santander
+GetStationsForContract - Stations récupérées pour le contrat santander
+GetStationsForContract - Début pour le contrat : lund
+GetStationsForContract - Stations récupérées pour le contrat lund
+GetStationsForContract - Début pour le contrat : maribor
+GetStationsForContract - Stations récupérées pour le contrat maribor
+GetStationsForContract - Début pour le contrat : bruxelles
+GetStationsForContract - Stations récupérées pour le contrat bruxelles
+GetStationsForContract - Début pour le contrat : lyon
+GetStationsForContract - Stations récupérées pour le contrat lyon
+GetStationsForContract - Début pour le contrat : amiens
+GetStationsForContract - Stations récupérées pour le contrat amiens
+GetStationsForContract - Début pour le contrat : mulhouse
+GetStationsForContract - Stations récupérées pour le contrat mulhouse
+GetStationsForContract - Début pour le contrat : lillestrom
+GetStationsForContract - Stations récupérées pour le contrat lillestrom
+GetStationsForContract - Début pour le contrat : ljubljana
+GetStationsForContract - Stations récupérées pour le contrat ljubljana
+GetStationsForContract - Début pour le contrat : seville
+GetStationsForContract - Stations récupérées pour le contrat seville
+GetStationsForContract - Début pour le contrat : nancy
+GetStationsForContract - Stations récupérées pour le contrat nancy
+GetStationsForContract - Début pour le contrat : namur
+GetStationsForContract - Stations récupérées pour le contrat namur
+GetStationsForContract - Début pour le contrat : creteil
+GetStationsForContract - Stations récupérées pour le contrat creteil
+GetStationsForContract - Début pour le contrat : cergy-pontoise
+GetStationsForContract - Stations récupérées pour le contrat cergy-pontoise
+GetStationsForContract - Début pour le contrat : vilnius
+GetStationsForContract - Stations récupérées pour le contrat vilnius
+GetStationsForContract - Début pour le contrat : toyama
+GetStationsForContract - Stations récupérées pour le contrat toyama
+GetStationsForContract - Début pour le contrat : marseille
+GetStationsForContract - Stations récupérées pour le contrat marseille
+GetStationsForContract - Début pour le contrat : nantes
+GetStationsForContract - Stations récupérées pour le contrat nantes
+GetStationsForContract - Début pour le contrat : brisbane
+GetStationsForContract - Stations récupérées pour le contrat brisbane
+GetStationsForContract - Début pour le contrat : besancon
+GetStationsForContract - Stations récupérées pour le contrat besancon
+GetNearestContract - Début
+GetNearestContract - Contrat le plus proche trouvé : toulouse
+GetNearestStation - Contrat le plus proche : toulouse
+FindClosestStation - Début43,5105542 1,3669722
+FindClosestStation - Station la plus proche trouvée : 00264 - LAFOURGUETTE
+GetNearestStation - Station la plus proche trouvée : 00264 - LAFOURGUETTE
+GetNearestStation - Début
+GetNearestStation - Chargement des contrats
+GetContracts - Début
+GetContracts - Contrats récupérés avec succès
+GetStationsForContract - Début pour le contrat : rouen
+GetStationsForContract - Stations récupérées pour le contrat rouen
+GetStationsForContract - Début pour le contrat : jcdecauxbike
+GetStationsForContract - Stations récupérées pour le contrat jcdecauxbike
+GetStationsForContract - Début pour le contrat : toulouse
+GetStationsForContract - Stations récupérées pour le contrat toulouse
+GetStationsForContract - Début pour le contrat : luxembourg
+GetStationsForContract - Stations récupérées pour le contrat luxembourg
+GetStationsForContract - Début pour le contrat : dublin
+GetStationsForContract - Stations récupérées pour le contrat dublin
+GetStationsForContract - Début pour le contrat : valence
+GetStationsForContract - Stations récupérées pour le contrat valence
+GetStationsForContract - Début pour le contrat : stockholm
+GetStationsForContract - Stations récupérées pour le contrat stockholm
+GetStationsForContract - Début pour le contrat : santander
+GetStationsForContract - Stations récupérées pour le contrat santander
+GetStationsForContract - Début pour le contrat : lund
+GetStationsForContract - Stations récupérées pour le contrat lund
+GetStationsForContract - Début pour le contrat : maribor
+GetStationsForContract - Stations récupérées pour le contrat maribor
+GetStationsForContract - Début pour le contrat : bruxelles
+GetStationsForContract - Stations récupérées pour le contrat bruxelles
+GetStationsForContract - Début pour le contrat : lyon
+GetStationsForContract - Stations récupérées pour le contrat lyon
+GetStationsForContract - Début pour le contrat : amiens
+GetStationsForContract - Stations récupérées pour le contrat amiens
+GetStationsForContract - Début pour le contrat : mulhouse
+GetStationsForContract - Stations récupérées pour le contrat mulhouse
+GetStationsForContract - Début pour le contrat : lillestrom
+GetStationsForContract - Stations récupérées pour le contrat lillestrom
+GetStationsForContract - Début pour le contrat : ljubljana
+GetStationsForContract - Stations récupérées pour le contrat ljubljana
+GetStationsForContract - Début pour le contrat : seville
+GetStationsForContract - Stations récupérées pour le contrat seville
+GetStationsForContract - Début pour le contrat : nancy
+GetStationsForContract - Stations récupérées pour le contrat nancy
+GetStationsForContract - Début pour le contrat : namur
+GetStationsForContract - Stations récupérées pour le contrat namur
+GetStationsForContract - Début pour le contrat : creteil
+GetStationsForContract - Stations récupérées pour le contrat creteil
+GetStationsForContract - Début pour le contrat : cergy-pontoise
+GetStationsForContract - Stations récupérées pour le contrat cergy-pontoise
+GetStationsForContract - Début pour le contrat : vilnius
+GetStationsForContract - Stations récupérées pour le contrat vilnius
+GetStationsForContract - Début pour le contrat : toyama
+GetStationsForContract - Stations récupérées pour le contrat toyama
+GetStationsForContract - Début pour le contrat : marseille
+GetStationsForContract - Stations récupérées pour le contrat marseille
+GetStationsForContract - Début pour le contrat : nantes
+GetStationsForContract - Stations récupérées pour le contrat nantes
+GetStationsForContract - Début pour le contrat : brisbane
+GetStationsForContract - Stations récupérées pour le contrat brisbane
+GetStationsForContract - Début pour le contrat : besancon
+GetStationsForContract - Stations récupérées pour le contrat besancon
+GetNearestContract - Début
+GetNearestContract - Contrat le plus proche trouvé : toulouse
+GetNearestStation - Contrat le plus proche : toulouse
+FindClosestStation - Début43,6534937 1,4628286
+FindClosestStation - Station la plus proche trouvée : 00172 - NETWILLER - LAFFORGUE
+GetNearestStation - Station la plus proche trouvée : 00172 - NETWILLER - LAFFORGUE
+GetNearestStation - Début
+GetNearestStation - Chargement des contrats
+GetContracts - Début
+GetContracts - Contrats récupérés avec succès
+GetStationsForContract - Début pour le contrat : rouen
+GetStationsForContract - Stations récupérées pour le contrat rouen
+GetStationsForContract - Début pour le contrat : jcdecauxbike
+GetStationsForContract - Stations récupérées pour le contrat jcdecauxbike
+GetStationsForContract - Début pour le contrat : toulouse
+GetStationsForContract - Stations récupérées pour le contrat toulouse
+GetStationsForContract - Début pour le contrat : luxembourg
+GetStationsForContract - Stations récupérées pour le contrat luxembourg
+GetStationsForContract - Début pour le contrat : dublin
+GetStationsForContract - Stations récupérées pour le contrat dublin
+GetStationsForContract - Début pour le contrat : valence
+GetStationsForContract - Stations récupérées pour le contrat valence
+GetStationsForContract - Début pour le contrat : stockholm
+GetStationsForContract - Stations récupérées pour le contrat stockholm
+GetStationsForContract - Début pour le contrat : santander
+GetStationsForContract - Stations récupérées pour le contrat santander
+GetStationsForContract - Début pour le contrat : lund
+GetStationsForContract - Stations récupérées pour le contrat lund
+GetStationsForContract - Début pour le contrat : maribor
+GetStationsForContract - Stations récupérées pour le contrat maribor
+GetStationsForContract - Début pour le contrat : bruxelles
+GetStationsForContract - Stations récupérées pour le contrat bruxelles
+GetStationsForContract - Début pour le contrat : lyon
+GetStationsForContract - Stations récupérées pour le contrat lyon
+GetStationsForContract - Début pour le contrat : amiens
+GetStationsForContract - Stations récupérées pour le contrat amiens
+GetStationsForContract - Début pour le contrat : mulhouse
+GetStationsForContract - Stations récupérées pour le contrat mulhouse
+GetStationsForContract - Début pour le contrat : lillestrom
+GetStationsForContract - Stations récupérées pour le contrat lillestrom
+GetStationsForContract - Début pour le contrat : ljubljana
+GetStationsForContract - Stations récupérées pour le contrat ljubljana
+GetStationsForContract - Début pour le contrat : seville
+GetStationsForContract - Stations récupérées pour le contrat seville
+GetStationsForContract - Début pour le contrat : nancy
+GetStationsForContract - Stations récupérées pour le contrat nancy
+GetStationsForContract - Début pour le contrat : namur
+GetStationsForContract - Stations récupérées pour le contrat namur
+GetStationsForContract - Début pour le contrat : creteil
+GetStationsForContract - Stations récupérées pour le contrat creteil
+GetStationsForContract - Début pour le contrat : cergy-pontoise
+GetStationsForContract - Stations récupérées pour le contrat cergy-pontoise
+GetStationsForContract - Début pour le contrat : vilnius
+GetStationsForContract - Stations récupérées pour le contrat vilnius
+GetStationsForContract - Début pour le contrat : toyama
+GetStationsForContract - Stations récupérées pour le contrat toyama
+GetStationsForContract - Début pour le contrat : marseille
+GetStationsForContract - Stations récupérées pour le contrat marseille
+GetStationsForContract - Début pour le contrat : nantes
+GetStationsForContract - Stations récupérées pour le contrat nantes
+GetStationsForContract - Début pour le contrat : brisbane
+GetStationsForContract - Stations récupérées pour le contrat brisbane
+GetStationsForContract - Début pour le contrat : besancon
+GetStationsForContract - Stations récupérées pour le contrat besancon
+GetNearestContract - Début
+GetNearestContract - Contrat le plus proche trouvé : valence
+GetNearestStation - Contrat le plus proche : valence
+FindClosestStation - Début12,3510697 14,8327444
+FindClosestStation - Station la plus proche trouvée : 274_MANUEL_ANDRES_CASTELL_DE_POLOP
+GetNearestStation - Station la plus proche trouvée : 274_MANUEL_ANDRES_CASTELL_DE_POLOP
+GetNearestStation - Début
+GetNearestStation - Chargement des contrats
+GetContracts - Début
+GetContracts - Contrats récupérés avec succès
+GetStationsForContract - Début pour le contrat : rouen
+GetStationsForContract - Stations récupérées pour le contrat rouen
+GetStationsForContract - Début pour le contrat : jcdecauxbike
+GetStationsForContract - Stations récupérées pour le contrat jcdecauxbike
+GetStationsForContract - Début pour le contrat : toulouse
+GetStationsForContract - Stations récupérées pour le contrat toulouse
+GetStationsForContract - Début pour le contrat : luxembourg
+GetStationsForContract - Stations récupérées pour le contrat luxembourg
+GetStationsForContract - Début pour le contrat : dublin
+GetStationsForContract - Stations récupérées pour le contrat dublin
+GetStationsForContract - Début pour le contrat : valence
+GetStationsForContract - Stations récupérées pour le contrat valence
+GetStationsForContract - Début pour le contrat : stockholm
+GetStationsForContract - Stations récupérées pour le contrat stockholm
+GetStationsForContract - Début pour le contrat : santander
+GetStationsForContract - Stations récupérées pour le contrat santander
+GetStationsForContract - Début pour le contrat : lund
+GetStationsForContract - Stations récupérées pour le contrat lund
+GetStationsForContract - Début pour le contrat : maribor
+GetStationsForContract - Stations récupérées pour le contrat maribor
+GetStationsForContract - Début pour le contrat : bruxelles
+GetStationsForContract - Stations récupérées pour le contrat bruxelles
+GetStationsForContract - Début pour le contrat : lyon
+GetStationsForContract - Stations récupérées pour le contrat lyon
+GetStationsForContract - Début pour le contrat : amiens
+GetStationsForContract - Stations récupérées pour le contrat amiens
+GetStationsForContract - Début pour le contrat : mulhouse
+GetStationsForContract - Stations récupérées pour le contrat mulhouse
+GetStationsForContract - Début pour le contrat : lillestrom
+GetStationsForContract - Stations récupérées pour le contrat lillestrom
+GetStationsForContract - Début pour le contrat : ljubljana
+GetStationsForContract - Stations récupérées pour le contrat ljubljana
+GetStationsForContract - Début pour le contrat : seville
+GetStationsForContract - Stations récupérées pour le contrat seville
+GetStationsForContract - Début pour le contrat : nancy
+GetStationsForContract - Stations récupérées pour le contrat nancy
+GetStationsForContract - Début pour le contrat : namur
+GetStationsForContract - Stations récupérées pour le contrat namur
+GetStationsForContract - Début pour le contrat : creteil
+GetStationsForContract - Stations récupérées pour le contrat creteil
+GetStationsForContract - Début pour le contrat : cergy-pontoise
+GetStationsForContract - Stations récupérées pour le contrat cergy-pontoise
+GetStationsForContract - Début pour le contrat : vilnius
+GetStationsForContract - Stations récupérées pour le contrat vilnius
+GetStationsForContract - Début pour le contrat : toyama
+GetStationsForContract - Stations récupérées pour le contrat toyama
+GetStationsForContract - Début pour le contrat : marseille
+GetStationsForContract - Stations récupérées pour le contrat marseille
+GetStationsForContract - Début pour le contrat : nantes
+GetStationsForContract - Stations récupérées pour le contrat nantes
+GetStationsForContract - Début pour le contrat : brisbane
+GetStationsForContract - Stations récupérées pour le contrat brisbane
+GetStationsForContract - Début pour le contrat : besancon
+GetStationsForContract - Stations récupérées pour le contrat besancon
+GetNearestContract - Début
+GetNearestContract - Contrat le plus proche trouvé : lyon
+GetNearestStation - Contrat le plus proche : lyon
+FindClosestStation - Début45,7578137 4,8320114
+FindClosestStation - Station la plus proche trouvée : 2001 - BELLECOUR / RÉPUBLIQUE
+GetNearestStation - Station la plus proche trouvée : 2001 - BELLECOUR / RÉPUBLIQUE
+GetNearestStation - Début
+GetNearestStation - Chargement des contrats
+GetContracts - Début
+GetContracts - Contrats récupérés avec succès
+GetStationsForContract - Début pour le contrat : rouen
+GetStationsForContract - Stations récupérées pour le contrat rouen
+GetStationsForContract - Début pour le contrat : jcdecauxbike
+GetStationsForContract - Stations récupérées pour le contrat jcdecauxbike
+GetStationsForContract - Début pour le contrat : toulouse
+GetStationsForContract - Stations récupérées pour le contrat toulouse
+GetStationsForContract - Début pour le contrat : luxembourg
+GetStationsForContract - Stations récupérées pour le contrat luxembourg
+GetStationsForContract - Début pour le contrat : dublin
+GetStationsForContract - Stations récupérées pour le contrat dublin
+GetStationsForContract - Début pour le contrat : valence
+GetStationsForContract - Stations récupérées pour le contrat valence
+GetStationsForContract - Début pour le contrat : stockholm
+GetStationsForContract - Stations récupérées pour le contrat stockholm
+GetStationsForContract - Début pour le contrat : santander
+GetStationsForContract - Stations récupérées pour le contrat santander
+GetStationsForContract - Début pour le contrat : lund
+GetStationsForContract - Stations récupérées pour le contrat lund
+GetStationsForContract - Début pour le contrat : maribor
+GetStationsForContract - Stations récupérées pour le contrat maribor
+GetStationsForContract - Début pour le contrat : bruxelles
+GetStationsForContract - Stations récupérées pour le contrat bruxelles
+GetStationsForContract - Début pour le contrat : lyon
+GetStationsForContract - Stations récupérées pour le contrat lyon
+GetStationsForContract - Début pour le contrat : amiens
+GetStationsForContract - Stations récupérées pour le contrat amiens
+GetStationsForContract - Début pour le contrat : mulhouse
+GetStationsForContract - Stations récupérées pour le contrat mulhouse
+GetStationsForContract - Début pour le contrat : lillestrom
+GetStationsForContract - Stations récupérées pour le contrat lillestrom
+GetStationsForContract - Début pour le contrat : ljubljana
+GetStationsForContract - Stations récupérées pour le contrat ljubljana
+GetStationsForContract - Début pour le contrat : seville
+GetStationsForContract - Stations récupérées pour le contrat seville
+GetStationsForContract - Début pour le contrat : nancy
+GetStationsForContract - Stations récupérées pour le contrat nancy
+GetStationsForContract - Début pour le contrat : namur
+GetStationsForContract - Stations récupérées pour le contrat namur
+GetStationsForContract - Début pour le contrat : creteil
+GetStationsForContract - Stations récupérées pour le contrat creteil
+GetStationsForContract - Début pour le contrat : cergy-pontoise
+GetStationsForContract - Stations récupérées pour le contrat cergy-pontoise
+GetStationsForContract - Début pour le contrat : vilnius
+GetStationsForContract - Stations récupérées pour le contrat vilnius
+GetStationsForContract - Début pour le contrat : toyama
+GetStationsForContract - Stations récupérées pour le contrat toyama
+GetStationsForContract - Début pour le contrat : marseille
+GetStationsForContract - Stations récupérées pour le contrat marseille
+GetStationsForContract - Début pour le contrat : nantes
+GetStationsForContract - Stations récupérées pour le contrat nantes
+GetStationsForContract - Début pour le contrat : brisbane
+GetStationsForContract - Stations récupérées pour le contrat brisbane
+GetStationsForContract - Début pour le contrat : besancon
+GetStationsForContract - Stations récupérées pour le contrat besancon
+GetNearestContract - Début
+GetNearestContract - Contrat le plus proche trouvé : toulouse
+GetNearestStation - Contrat le plus proche : toulouse
+FindClosestStation - Début43,6044622 1,4442469
+FindClosestStation - Station la plus proche trouvée : 00007 - PLACE VICTOR HUGO
+GetNearestStation - Station la plus proche trouvée : 00007 - PLACE VICTOR HUGO
+GetNearestStation - Début
+GetNearestStation - Chargement des contrats
+GetContracts - Début
+GetContracts - Contrats récupérés avec succès
+GetStationsForContract - Début pour le contrat : rouen
+GetStationsForContract - Stations récupérées pour le contrat rouen
+GetStationsForContract - Début pour le contrat : jcdecauxbike
+GetStationsForContract - Stations récupérées pour le contrat jcdecauxbike
+GetStationsForContract - Début pour le contrat : toulouse
+GetStationsForContract - Stations récupérées pour le contrat toulouse
+GetStationsForContract - Début pour le contrat : luxembourg
+GetStationsForContract - Stations récupérées pour le contrat luxembourg
+GetStationsForContract - Début pour le contrat : dublin
+GetStationsForContract - Stations récupérées pour le contrat dublin
+GetStationsForContract - Début pour le contrat : valence
+GetStationsForContract - Stations récupérées pour le contrat valence
+GetStationsForContract - Début pour le contrat : stockholm
+GetStationsForContract - Stations récupérées pour le contrat stockholm
+GetStationsForContract - Début pour le contrat : santander
+GetStationsForContract - Stations récupérées pour le contrat santander
+GetStationsForContract - Début pour le contrat : lund
+GetStationsForContract - Stations récupérées pour le contrat lund
+GetStationsForContract - Début pour le contrat : maribor
+GetStationsForContract - Stations récupérées pour le contrat maribor
+GetStationsForContract - Début pour le contrat : bruxelles
+GetStationsForContract - Stations récupérées pour le contrat bruxelles
+GetStationsForContract - Début pour le contrat : lyon
+GetStationsForContract - Stations récupérées pour le contrat lyon
+GetStationsForContract - Début pour le contrat : amiens
+GetStationsForContract - Stations récupérées pour le contrat amiens
+GetStationsForContract - Début pour le contrat : mulhouse
+GetStationsForContract - Stations récupérées pour le contrat mulhouse
+GetStationsForContract - Début pour le contrat : lillestrom
+GetStationsForContract - Stations récupérées pour le contrat lillestrom
+GetStationsForContract - Début pour le contrat : ljubljana
+GetStationsForContract - Stations récupérées pour le contrat ljubljana
+GetStationsForContract - Début pour le contrat : seville
+GetStationsForContract - Stations récupérées pour le contrat seville
+GetStationsForContract - Début pour le contrat : nancy
+GetStationsForContract - Stations récupérées pour le contrat nancy
+GetStationsForContract - Début pour le contrat : namur
+GetStationsForContract - Stations récupérées pour le contrat namur
+GetStationsForContract - Début pour le contrat : creteil
+GetStationsForContract - Stations récupérées pour le contrat creteil
+GetStationsForContract - Début pour le contrat : cergy-pontoise
+GetStationsForContract - Stations récupérées pour le contrat cergy-pontoise
+GetStationsForContract - Début pour le contrat : vilnius
+GetStationsForContract - Stations récupérées pour le contrat vilnius
+GetStationsForContract - Début pour le contrat : toyama
+GetStationsForContract - Stations récupérées pour le contrat toyama
+GetStationsForContract - Début pour le contrat : marseille
+GetStationsForContract - Stations récupérées pour le contrat marseille
+GetStationsForContract - Début pour le contrat : nantes
+GetStationsForContract - Stations récupérées pour le contrat nantes
+GetStationsForContract - Début pour le contrat : brisbane
+GetStationsForContract - Stations récupérées pour le contrat brisbane
+GetStationsForContract - Début pour le contrat : besancon
+GetStationsForContract - Stations récupérées pour le contrat besancon
+GetNearestContract - Début
+GetNearestContract - Contrat le plus proche trouvé : lyon
+GetNearestStation - Contrat le plus proche : lyon
+FindClosestStation - Début45,7578137 4,8320114
+FindClosestStation - Station la plus proche trouvée : 2001 - BELLECOUR / RÉPUBLIQUE
+GetNearestStation - Station la plus proche trouvée : 2001 - BELLECOUR / RÉPUBLIQUE

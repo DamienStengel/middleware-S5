@@ -11,6 +11,6 @@ namespace Proxy
     public interface IService
     {
         [OperationContract]
-        string GetContracts(string origin, string destination);
+        Task<JCDStation> GetNearestStation(Position origin, Boolean isCheckingBikeAvailability);
     }
 }

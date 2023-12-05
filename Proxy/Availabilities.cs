@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Proxy
 {
-    internal class Availabilities
+    public class Availabilities
     {
         public int bikes {  get; set; }
         public int stands { get; set; }

@@ -1,0 +1,6 @@
+C:\Users\damys\source\repos\middleware-S5\TestWCF\bin\Debug\TestWCF.exe
+C:\Users\damys\source\repos\middleware-S5\TestWCF\bin\Debug\TestWCF.pdb
+C:\Users\damys\source\repos\middleware-S5\TestWCF\obj\Debug\TestWCF.csproj.AssemblyReference.cache
+C:\Users\damys\source\repos\middleware-S5\TestWCF\obj\Debug\TestWCF.csproj.CoreCompileInputs.cache
+C:\Users\damys\source\repos\middleware-S5\TestWCF\obj\Debug\TestWCF.exe
+C:\Users\damys\source\repos\middleware-S5\TestWCF\obj\Debug\TestWCF.pdb

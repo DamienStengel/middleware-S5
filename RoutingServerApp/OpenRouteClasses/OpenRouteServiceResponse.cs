@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace RoutingServerApp.OpenRouteClasses
 {
     public class OpenRouteServiceResponse
     {
-        public List<Feature> Features { get; set; }
+        public List<Feature> features { get; set; }
     }
 }

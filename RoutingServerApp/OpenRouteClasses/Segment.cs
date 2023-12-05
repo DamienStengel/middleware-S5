@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+
 
 namespace RoutingServerApp.OpenRouteClasses
 {
     public class Segment
     {
-        public List<Step> Steps { get; set; }
+        public List<Step> steps { get; set; }
     }
 }

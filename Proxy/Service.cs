@@ -1,13 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Device.Location;
-using System.Diagnostics.Contracts;
-using System.Linq;
 using System.Net.Http;
-using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
-using static System.Collections.Specialized.BitVector32;
+using System.Diagnostics;
 
 namespace Proxy
 {
@@ -16,109 +13,169 @@ namespace Proxy
         private const string BaseUrl = "https://api.jcdecaux.com/vls/v3/";
         private const string ApiKey = "f43a772a0e8818f54fa0f0c2628d4e2a2375b0c7";
         private List<Contract> contracts;
-        //Delay between on stations in second
         private const double PROXY_REFRESH_TIME = 120;
+
         public async Task<JCDStation> GetNearestStation(Position position, bool isCheckingBikeAvailability)
         {
-            using (HttpClient client = new HttpClient())
+            Trace.WriteLine("GetNearestStation - Début");
+            try
             {
-                client.BaseAddress = new Uri(BaseUrl);
-                if(contracts == null)
+                Stopwatch stopwatch = new Stopwatch();
+                stopwatch.Start(); 
+                using (HttpClient client = new HttpClient())
                 {
-                    var JCDContracts = await GetContracts(client);
-                    foreach(var contract in JCDContracts)
+                    client.BaseAddress = new Uri(BaseUrl);
+                    if (contracts == null)
                     {
-                        var contractResult = new Contract();
-                        contractResult.name = contract.name;
-                        var JCDStations = await GetStationsForContract(client, contract.name);
-                        contractResult.stations = JCDStations;
-                        contractResult.lastRefresh = DateTime.Now;
-                        this.contracts.Add(contractResult);
+                        Trace.WriteLine("GetNearestStation - Chargement des contrats");
+                        contracts = new List<Contract>();
+                        var JCDContracts = await GetContracts(client);
+                        foreach (var contract in JCDContracts)
+                        {
+                            var contractResult = new Contract
+                            {
+                                name = contract.name,
+                                stations = await GetStationsForContract(client, contract.name),
+                                lastRefresh = DateTime.Now
+                            };
+                            contracts.Add(contractResult);
+                        }
                     }
-                }
-                var nearestContract = getNearestContract(position);
-                TimeSpan refreshTimeSpan = TimeSpan.FromSeconds(PROXY_REFRESH_TIME);
-                if (DateTime.Now - nearestContract.lastRefresh < refreshTimeSpan)
-                {
-                    nearestContract.stations = await GetStationsForContract(client,nearestContract.name);
 
-                }
-                var closestStation = FindClosestStation(position, nearestContract.stations, isCheckingBikeAvailability);
+                    var nearestContract = GetNearestContract(position);
+                    Trace.WriteLine($"GetNearestStation - Contrat le plus proche : {nearestContract?.name}");
 
-                return closestStation;
+                    TimeSpan refreshTimeSpan = TimeSpan.FromSeconds(PROXY_REFRESH_TIME);
+                    if (DateTime.Now - nearestContract.lastRefresh > refreshTimeSpan)
+                    {
+                        Trace.WriteLine($"GetNearestStation - Rafraîchissement des stations pour le contrat {nearestContract.name}");
+                        nearestContract.stations = await GetStationsForContract(client, nearestContract.name);
+                    }
+
+                    var closestStation = FindClosestStation(position, nearestContract.stations, isCheckingBikeAvailability);
+                    Trace.WriteLine($"GetNearestStation - Station la plus proche trouvée : {closestStation?.name}");
+                    
+                    stopwatch.Stop(); // Stop measuring time
+                    TimeSpan elapsedTime = stopwatch.Elapsed;
+                    Console.WriteLine($"Time to send station request: {elapsedTime.TotalMilliseconds} milliseconds");
+
+
+                    return closestStation;
+                }
+            }
+            catch (Exception ex)
+            {
+                Trace.WriteLine($"GetNearestStation - Exception : {ex}");
+                throw;
             }
         }
 
-        private Contract getNearestContract(Position currentPosition)
+        private Contract GetNearestContract(Position currentPosition)
         {
-            Contract nearestContract = null;
-            double nearestDistance = double.MaxValue;
-            GeoCoordinate currentGeo = currentPosition.ToGeoCoordinate();
-
-            foreach (var contract in this.contracts)
+            Trace.WriteLine("GetNearestContract - Début");
+            try
             {
-                foreach (var station in contract.stations)
+                Contract nearestContract = null;
+                double nearestDistance = double.MaxValue;
+                GeoCoordinate currentGeo = currentPosition.ToGeoCoordinate();
+
+                foreach (var contract in contracts)
                 {
-                    GeoCoordinate stationGeo = station.position.ToGeoCoordinate();
-                    double distance = currentGeo.GetDistanceTo(stationGeo);
-                    if (distance < nearestDistance)
+                    foreach (var station in contract.stations)
                     {
-                        nearestDistance = distance;
-                        nearestContract = contract;
-                    }
-                    else
-                    {
-                        if(distance-nearestDistance < 100000)
+                        GeoCoordinate stationGeo = station.position.ToGeoCoordinate();
+                        double distance = currentGeo.GetDistanceTo(stationGeo);
+                        if (distance < nearestDistance)
                         {
-                            break;
+                            nearestDistance = distance;
+                            nearestContract = contract;
                         }
                     }
                 }
+
+                Trace.WriteLine($"GetNearestContract - Contrat le plus proche trouvé : {nearestContract?.name}");
+                return nearestContract;
             }
-
-            return nearestContract;
+            catch (Exception ex)
+            {
+                Trace.WriteLine($"GetNearestContract - Exception : {ex}");
+                throw;
+            }
         }
-
 
         static async Task<List<JCDContract>> GetContracts(HttpClient client)
         {
-            var response = await client.GetStringAsync($"contracts?apiKey={ApiKey}");
-            return JsonSerializer.Deserialize<List<JCDContract>>(response);
+            Trace.WriteLine("GetContracts - Début");
+            try
+            {
+                var response = await client.GetStringAsync($"contracts?apiKey={ApiKey}");
+                var contracts = JsonSerializer.Deserialize<List<JCDContract>>(response);
+                Trace.WriteLine("GetContracts - Contrats récupérés avec succès");
+                return contracts;
+            }
+            catch (Exception ex)
+            {
+                Trace.WriteLine($"GetContracts - Exception : {ex}");
+                throw;
+            }
         }
 
         static async Task<List<JCDStation>> GetStationsForContract(HttpClient client, string contractName)
         {
-            var response = await client.GetStringAsync($"stations?contract={contractName}&apiKey={ApiKey}");
-            return JsonSerializer.Deserialize<List<JCDStation>>(response);
+            Trace.WriteLine($"GetStationsForContract - Début pour le contrat : {contractName}");
+            try
+            {
+                var response = await client.GetStringAsync($"stations?contract={contractName}&apiKey={ApiKey}");
+                var stations = JsonSerializer.Deserialize<List<JCDStation>>(response);
+                Trace.WriteLine($"GetStationsForContract - Stations récupérées pour le contrat {contractName}");
+                return stations;
+            }
+            catch (Exception ex)
+            {
+                Trace.WriteLine($"GetStationsForContract - Exception : {ex}");
+                throw;
+            }
         }
 
-        static JCDStation FindClosestStation(Position target, List<JCDStation> stations, Boolean isCheckingForAvailability)
+        static JCDStation FindClosestStation(Position target, List<JCDStation> stations, bool isCheckingForAvailability)
         {
-            GeoCoordinate targetCoord = target.ToGeoCoordinate();
-            double closestDistance = double.MaxValue;
-            JCDStation closestStation = null;
-
-            foreach (var station in stations)
+            Trace.WriteLine("FindClosestStation - Début"+target.latitude+" "+target.longitude);
+            try
             {
-                if (station.mainStands.availabilities.bikes > 0)
+                GeoCoordinate targetCoord = target.ToGeoCoordinate();
+                double closestDistance = double.MaxValue;
+                JCDStation closestStation = null;
+
+                foreach (var station in stations)
                 {
                     GeoCoordinate stationCoord = station.position.ToGeoCoordinate();
                     double distance = targetCoord.GetDistanceTo(stationCoord);
 
-                    if (distance < closestDistance)
+                    if ((isCheckingForAvailability && station.mainStands.availabilities.bikes > 0) ||
+                        (!isCheckingForAvailability && station.mainStands.availabilities.bikes < station.mainStands.availabilities.stands))
                     {
-                        closestDistance = distance;
-                        closestStation = station;
+                        if (distance < closestDistance)
+                        {
+                            closestDistance = distance;
+                            closestStation = station;
+                        }
                     }
                 }
-            }
-            if(closestStation == null)
-            {
-                throw new Exception("No bike available in nearby station");
-            }
 
-            return closestStation;
+                if (closestStation == null)
+                {
+                    Trace.WriteLine("FindClosestStation - Aucune station trouvée");
+                    throw new Exception("No bike available in nearby station");
+                }
+
+                Trace.WriteLine($"FindClosestStation - Station la plus proche trouvée : {closestStation?.name}");
+                return closestStation;
+            }
+            catch (Exception ex)
+            {
+                Trace.WriteLine($"FindClosestStation - Exception : {ex}");
+                throw;
+            }
         }
     }
-}
 }

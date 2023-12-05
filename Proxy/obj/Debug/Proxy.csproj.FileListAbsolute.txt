@@ -5,3 +5,17 @@ C:\Users\damys\source\repos\middleware-S5\Proxy\bin\Debug\Proxy.exe
 C:\Users\damys\source\repos\middleware-S5\Proxy\bin\Debug\Proxy.pdb
 C:\Users\damys\source\repos\middleware-S5\Proxy\obj\Debug\Proxy.exe
 C:\Users\damys\source\repos\middleware-S5\Proxy\obj\Debug\Proxy.pdb
+C:\Users\damys\source\repos\middleware-S5\Proxy\bin\Debug\System.Buffers.dll
+C:\Users\damys\source\repos\middleware-S5\Proxy\bin\Debug\System.Memory.dll
+C:\Users\damys\source\repos\middleware-S5\Proxy\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\damys\source\repos\middleware-S5\Proxy\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\damys\source\repos\middleware-S5\Proxy\bin\Debug\System.Text.Json.dll
+C:\Users\damys\source\repos\middleware-S5\Proxy\bin\Debug\System.ValueTuple.dll
+C:\Users\damys\source\repos\middleware-S5\Proxy\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\damys\source\repos\middleware-S5\Proxy\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\damys\source\repos\middleware-S5\Proxy\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\damys\source\repos\middleware-S5\Proxy\bin\Debug\System.Buffers.xml
+C:\Users\damys\source\repos\middleware-S5\Proxy\bin\Debug\System.Memory.xml
+C:\Users\damys\source\repos\middleware-S5\Proxy\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\damys\source\repos\middleware-S5\Proxy\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\damys\source\repos\middleware-S5\Proxy\obj\Debug\Proxy.csproj.CopyComplete
